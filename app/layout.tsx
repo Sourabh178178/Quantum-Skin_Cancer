@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "MedQube — Earlier signals, deeper understanding",
-  description: "A quantum-assisted early-disease screening platform prototype.",
+  title: "QEMNet — Quantum Skin Cancer Screening",
+  description: "Hybrid quantum-classical deep learning for dermoscopic skin lesion classification. B.E. Major Project.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

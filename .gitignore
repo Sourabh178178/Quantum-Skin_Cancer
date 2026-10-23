@@ -21,3 +21,9 @@ Thumbs.db
 .idea/
 
 tsconfig.tsbuildinfo
+
+.claude/
+
+__pycache__/
+*.pyc
+*.pyo

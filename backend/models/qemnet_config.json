@@ -1,0 +1,37 @@
+{
+  "model_name": "QEMNet HybridMobileNet",
+  "architecture": "torchvision MobileNetV2 feature extractor + classical branch + PennyLane quantum branch",
+  "num_classes": 7,
+  "classes": [
+    "akiec",
+    "bcc",
+    "bkl",
+    "df",
+    "mel",
+    "nv",
+    "vasc"
+  ],
+  "class_to_idx": {
+    "akiec": 0,
+    "bcc": 1,
+    "bkl": 2,
+    "df": 3,
+    "mel": 4,
+    "nv": 5,
+    "vasc": 6
+  },
+  "image_size": 224,
+  "input_color": "RGB",
+  "inference_transform": [
+    "Resize((224, 224))",
+    "ToTensor()"
+  ],
+  "normalization": null,
+  "quantum": {
+    "n_qubits": 2,
+    "n_layers": 2,
+    "device": "default.qubit"
+  },
+  "weights_file": "qemnet_mobilenet_quantum_weights.pth",
+  "pytorch_version": "2.11.0+cu128"
+}
